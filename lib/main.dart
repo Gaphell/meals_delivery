@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:meals_delivery/views/categories_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,28 +15,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         accentColor: Colors.greenAccent
       ),
-      home: MyHomePage(),
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Meals after me'),
-      ),
-      body: Center(
-        child: Text(
-          'Navigation time',
-        ),
-      ),
+      home: CategoriesScreen(),
     );
   }
 }
