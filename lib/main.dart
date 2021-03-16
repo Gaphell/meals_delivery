@@ -62,7 +62,7 @@ class _MyAppState extends State<MyApp> {
         _favoriteMeals.add(
           DUMMY_MEALS.firstWhere((meal) => meal.id == mealId),
         );
-      }
+      } 
     });
   }
 
